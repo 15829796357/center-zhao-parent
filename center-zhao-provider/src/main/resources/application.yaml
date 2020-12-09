@@ -1,0 +1,28 @@
+server:
+  port: 8889
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mango?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.zhao.center.provider.model
+mapper:
+  identity: MYSQL
+  mappers: com.zhao.center.provider.utils.BaseComMapper
+
+
+
+
