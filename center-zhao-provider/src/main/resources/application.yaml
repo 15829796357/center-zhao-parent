@@ -6,6 +6,14 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/mango?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    mode: LEGACYHTML5
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
 dubbo:
   application:
     name: dubbo-provider

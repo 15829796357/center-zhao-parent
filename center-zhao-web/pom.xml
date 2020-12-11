@@ -21,10 +21,10 @@
 			<groupId>com.zhao.center</groupId>
 			<artifactId>center-zhao-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.zhao.center</groupId>
-			<artifactId>center-zhao-security</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.zhao.center</groupId>-->
+			<!--<artifactId>center-zhao-security</artifactId>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -69,6 +69,17 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.tobato</groupId>
+			<artifactId>fastdfs-client</artifactId>
+			<version>1.27.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 	</dependencies>

@@ -13,6 +13,7 @@
         <module>center-zhao-provider</module>
         <module>center-zhao-web</module>
         <module>center-zhao-security</module>
+        <module>cemter-zhao-webmvc</module>
     </modules>
 
     <parent>

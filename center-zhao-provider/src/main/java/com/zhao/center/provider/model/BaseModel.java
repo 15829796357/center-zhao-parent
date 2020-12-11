@@ -1,5 +1,7 @@
 package com.zhao.center.provider.model;
 
+import lombok.Data;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Date;
@@ -9,6 +11,7 @@ import java.util.Date;
  * @Description 通用字段设置
  * @since 2020/12/8$ 15:06$
  */
+@Data
 public class BaseModel {
     @Id
     @GeneratedValue(generator = "JDBC")//获取数据库自增的主键

@@ -35,3 +35,15 @@ secure:
 #    user:
 #      name: root
 #      password: 123456
+
+fdfs:
+  soTimeout: 15000 #socket连接超时时⻓
+  connectTimeout: 6000 #连接tracker服务器超时时⻓
+  reqHost: 47.113.81.149 #nginx访问地址
+  reqPort: 8080 #nginx访问端⼝
+  thumb-image: #缩略图⽣成参数，可选
+    height: 150
+    width: 150
+  trackerList: #TrackerList参数,⽀持多个，我这⾥只有⼀个，如果有多个在下⽅加-x.x.x.x:port
+    - 47.113.81.149:22122
+  web-server-url: http://47.113.81.149:8081/

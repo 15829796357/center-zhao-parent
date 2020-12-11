@@ -25,6 +25,5 @@ class CenterZhaoWebApplicationTests {
 
 	@Test
 	public void test(){
-		sysUserService.loadUserByUsername("admin").getId();
 	}
 }

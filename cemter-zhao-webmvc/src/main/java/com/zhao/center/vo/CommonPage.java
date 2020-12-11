@@ -1,12 +1,14 @@
-package com.zhao.center.returnUtils;
+package com.zhao.center.vo;
 
 import java.util.List;
 
 /**
- * 分页数据封装类
- * Created by macro on 2019/4/19.
+ * @author ZCH
+ * @Description
+ * @since 2020/8/28$ 11:17$
  */
 public class CommonPage<T> {
+
     private Integer pageNum;
     private Integer pageSize;
     private Integer totalPage;
